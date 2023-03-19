@@ -112,6 +112,7 @@ input[type="file"] {
   background: var(--secondary-color);
   position: absolute;
   top: 0;
+  z-index: 100;
 }
 
 .modal-create-product .file-uploud {
