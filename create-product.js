@@ -25,6 +25,7 @@ inputPhoto.addEventListener("click", () => {
 })
 
 
+// Aparecer Preview da imagem
 inputFile.addEventListener("change", () => {
 
   if(inputFile.files.lenght <= 0) {
