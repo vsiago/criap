@@ -25,7 +25,20 @@ inputPhoto.addEventListener("click", () => {
 })
 
 
+inputFile.addEventListener("change", () => {
 
+  if(inputFile.files.lenght <= 0) {
+    return
+  }
+
+  let reader = new FileReader();
+
+  reader.onload = () => {
+    inputPhoto.src = reader.result;
+  }
+
+  reader.readAsDataURL(inputFile.files[0]);
+})
 
 
 
@@ -72,5 +85,3 @@ inputPhoto.addEventListener("click", () => {
 //     order: {},
 //   },
 // ];
-
-console.log(listaDeEstabelecimentos[1].userLogin.user);
