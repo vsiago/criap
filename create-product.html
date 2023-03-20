@@ -58,7 +58,7 @@
         </svg>
         <p class="primary-title">Crie o seu <br />primeiro produto</p>
       </div>
-      <button class="primary-button" id="btnCriarProduto">Criar produto</button>
+      <button class="primary-button" id="btnAbrirModal">Criar produto</button>
     </main>
 
     <!-- MODAL -->
@@ -95,6 +95,7 @@
       <form action="">
         <label class="label-primary" for="nome">Nome</label>
         <input
+          id="name" 
           class="input-primary"
           type="text"
           placeholder="Digite o nome do produto"
@@ -102,45 +103,34 @@
         />
         <label class="label-primary" for="nome">Preço</label>
         <input
+          id="preco"
           class="input-primary"
           type="text"
           placeholder="Ex.: R$ 34,00"
           name="nome"
         />
         <label class="label-primary" for="nome">Descrição</label>
-        <textarea class="input-primary" name="" id="" cols="30" rows="20" placeholder="Uma descrição para este produto"></textarea>
-        <input class="primary-button" type="button" value="Criar produto">
+        <textarea id="descricao" class="input-primary" name="" id="" cols="30" rows="20" placeholder="Uma descrição para este produto"></textarea>
+        <input id="btnCriarProduto" class="primary-button" type="button" value="Criar produto">
       </form>
     </div>
 
     <!-- LISTAGEM DE PRODUTOS -->
 
-    <section class="products-list">
-      <div class="product-card">
-        <img src="./pizza-calabreza.png" alt="Imagem do produto">
+    <ul id="lista-produtos">
+      <!-- <li class="product-card">
+        <img id="productImg" src="./pizza-calabreza.png" alt="Imagem do produto">
         <div>
           <p class="product-name">Nome do Produto</p>
-        <p>R$: 20,00</p>
+        <p class="price">R$: 20,00</p>
         <div class="amount-controller">
           <p class="amount">01</p>
           <button>+</button>
           <button>-</button>
         </div>        
         </div>
-      </div>
-      <div class="product-card">
-        <img src="./pizza-calabreza.png" alt="Imagem do produto">
-        <div>
-          <p class="product-name">Nome do Produto</p>
-        <p>R$: 20,00</p>
-        <div class="amount-controller">
-          <p class="amount">01</p>
-          <button>+</button>
-          <button>-</button>
-        </div>        
-        </div>
-      </div>
-    </section>
+      </li> -->
+    </ul>
 
     <script src="create-product.js"></script>
   </body>
